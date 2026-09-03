@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Work | Sachi Lei Paredes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B0C0E;
+    --ink-soft:#17181B;
+    --paper:#F2F2F0;
+    --paper-dim:#9A9A96;
+    --accent:#7A5CFA;
+    --gold:#D1A954;
+    --line:rgba(242,242,240,0.12);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--ink);color:var(--paper);font-family:'Inter',sans-serif;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 28px;}
+  a{color:inherit;}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0;flex-wrap:wrap;gap:14px;}
+  .logo{font-family:'Poppins',sans-serif;font-weight:700;font-size:19px;letter-spacing:-0.01em;}
+  .logo span{color:var(--accent);}
+  .nav-links{display:flex;gap:20px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:12px;}
+  .nav-links a{color:var(--paper-dim);text-decoration:none;}
+  .nav-links a:hover{color:var(--paper);}
+  .nav-links a.current{color:var(--paper);border-bottom:1px solid var(--accent);}
+ 
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin:36px 0 20px;}
+  h1{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(30px,4.6vw,44px);line-height:1.1;margin:0 0 20px;letter-spacing:-0.02em;max-width:640px;}
+  .lead{font-size:15px;line-height:1.6;color:var(--paper-dim);max-width:600px;margin:0 0 56px;}
+ 
+  .client-card{border-top:1px solid var(--line);padding:32px 0;}
+  .client-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .client-title{font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;text-decoration:none;color:var(--paper);border-bottom:1px solid var(--accent);}
+  .client-tag{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gold);letter-spacing:0.04em;}
+  .client-context{font-size:14px;line-height:1.6;color:var(--paper-dim);margin:12px 0 14px;max-width:680px;}
+  .client-row{display:flex;gap:10px;margin-bottom:6px;max-width:680px;}
+  .client-row b{font-family:'Poppins',sans-serif;font-weight:600;font-size:12.5px;color:var(--paper);min-width:66px;flex-shrink:0;}
+  .client-row span{font-size:13px;line-height:1.55;color:var(--paper-dim);}
+ 
+  details{margin-top:12px;}
+  summary{
+    font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--paper-dim);
+    cursor:pointer;letter-spacing:0.04em;list-style:none;display:inline-flex;align-items:center;gap:6px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::before{content:"+";color:var(--accent);font-size:13px;}
+  details[open] summary::before{content:"–";}
+  .link-list{display:flex;flex-direction:column;gap:5px;margin-top:10px;padding-left:2px;}
+  .link-list a{font-size:12.5px;color:var(--paper-dim);text-decoration:none;word-break:break-word;}
+  .link-list a:hover{color:var(--accent);}
+ 
+  .closing{border-top:1px solid var(--line);padding:36px 0 90px;}
+  .closing p{font-size:13.5px;line-height:1.6;color:var(--paper-dim);max-width:600px;margin:0;}
+ 
+  footer{
+    border-top:1px solid var(--line);padding:24px 0 40px;display:flex;justify-content:space-between;
+    font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--paper-dim);flex-wrap:wrap;gap:14px;align-items:center;
+  }
+  .footer-links{display:flex;gap:18px;flex-wrap:wrap;}
+  .footer-links a{color:var(--paper-dim);text-decoration:none;}
+  .footer-links a:hover{color:var(--paper);}
+</style>
+</head>
+<body>
+ 
+<div class="wrap">
+ 
+  <nav>
+    <span class="logo">SACHI LEI <span>PAREDES</span></span>
+    <div class="nav-links">
+      <a href="/contentportfolio.html/">Home</a>
+      <a href="checklists2026.html">Checklists 2026</a>
+      <a href="client-work.html" class="current">Client Work</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+ 
+  <p class="eyebrow">Published work</p>
+  <h1>Client work</h1>
+  <p class="lead">Service pages, product pages, location pages, and articles written for current and past clients.</p>
+ 
+  <div class="client-card">
+    <div class="client-head">
+      <a class="client-title" href="https://www.intelivita.co.uk/" target="_blank" rel="noopener">Intelivita</a>
+      <span class="client-tag">UK · App development</span>
+    </div>
+    <p class="client-context">Intelivita needed service pages and blog content that could rank for the questions prospects ask before hiring an app development agency.</p>
+    <div class="client-row"><b>Solution</b><span>Wrote the homepage, platform-specific service pages for Android, iOS, and taxi app development, and blog content on web vs. mobile decisions, outsourcing, wireframing, and build timelines.</span></div>
+    <div class="client-row"><b>Result</b><span>6.72K clicks and 2.36M impressions on the content over 12 weeks, average position 7.</span></div>
+    <details>
+      <summary>Published pages (13)</summary>
+      <div class="link-list">
+        <a href="https://www.intelivita.co.uk/" target="_blank" rel="noopener">Homepage</a>
+        <a href="https://www.intelivita.co.uk/android-application-development" target="_blank" rel="noopener">Android App Development</a>
+        <a href="https://www.intelivita.co.uk/iphone-app-development" target="_blank" rel="noopener">iOS App Development</a>
+        <a href="https://www.intelivita.co.uk/taxi-app-development" target="_blank" rel="noopener">Taxi App Development</a>
+        <a href="https://www.intelivita.co.uk/blog/web-app-vs-mobile-app" target="_blank" rel="noopener">Web App vs Mobile App</a>
+        <a href="https://www.intelivita.co.uk/blog/outsourcing-web-development" target="_blank" rel="noopener">Outsourcing Web Development</a>
+        <a href="https://www.intelivita.co.uk/blog/app-wireframe-design" target="_blank" rel="noopener">App Wireframe Design</a>
+        <a href="https://www.intelivita.co.uk/blog/how-long-does-it-take-to-build-a-website" target="_blank" rel="noopener">How Long Does It Take to Build a Website</a>
+        <a href="https://www.intelivita.co.uk/blog/web-development-tools" target="_blank" rel="noopener">Web Development Tools</a>
+        <a href="https://www.intelivita.co.uk/blog/finance-apps" target="_blank" rel="noopener">Finance Apps</a>
+        <a href="https://www.intelivita.co.uk/blog/components-of-a-website" target="_blank" rel="noopener">Components of a Website</a>
+        <a href="https://www.intelivita.co.uk/blog/custom-android-app-development" target="_blank" rel="noopener">Custom Android App Development</a>
+        <a href="https://www.intelivita.co.uk/blog/python-back-end-or-front-end-web-development" target="_blank" rel="noopener">Python: Back-End or Front-End</a>
+      </div>
+    </details>
+  </div>
+ 
+  <div class="client-card">
+    <div class="client-head">
+      <a class="client-title" href="https://whatsdemand.com/" target="_blank" rel="noopener">WhatsDemand</a>
+      <span class="client-tag">US · Home services platform</span>
+    </div>
+    <p class="client-context">WhatsDemand connects homeowners to plumbing providers across the US and needed local visibility in five cities without positioning itself as the direct provider.</p>
+    <div class="client-row"><b>Solution</b><span>Wrote service pages for plumbing, water heater repair, pipe descaling, drain cleaning, and water treatment, plus city pages for Houston, Phoenix, New York City, Los Angeles, and Chicago, and blog content on drain systems and plumbing maintenance.</span></div>
+    <div class="client-row"><b>Result</b><span>WhatsDemand gained local landing pages for Houston, Phoenix, New York City, Los Angeles, and Chicago, improving its visibility for plumbing-related searches in each target market..</span></div>
+    <details>
+      <summary>Published pages (14)</summary>
+      <div class="link-list">
+        <a href="https://whatsdemand.com/" target="_blank" rel="noopener">Homepage</a>
+        <a href="https://whatsdemand.com/plumbing/" target="_blank" rel="noopener">Plumbing Services</a>
+        <a href="https://whatsdemand.com/water-heater/" target="_blank" rel="noopener">Water Heater</a>
+        <a href="https://whatsdemand.com/pipe/descaling/" target="_blank" rel="noopener">Pipe Descaling</a>
+        <a href="https://whatsdemand.com/drain/cleaning/" target="_blank" rel="noopener">Drain Cleaning</a>
+        <a href="https://whatsdemand.com/water-treatment/" target="_blank" rel="noopener">Water Treatment</a>
+        <a href="https://whatsdemand.com/texas/houston/" target="_blank" rel="noopener">Houston, TX</a>
+        <a href="https://whatsdemand.com/arizona/phoenix/" target="_blank" rel="noopener">Phoenix, AZ</a>
+        <a href="https://whatsdemand.com/new-york/new-york-city/" target="_blank" rel="noopener">New York City, NY</a>
+        <a href="https://whatsdemand.com/california/los-angeles/" target="_blank" rel="noopener">Los Angeles, CA</a>
+        <a href="https://whatsdemand.com/illinois/chicago/" target="_blank" rel="noopener">Chicago, IL</a>
+        <a href="https://whatsdemand.com/blog/drain-system/" target="_blank" rel="noopener">Drain System</a>
+        <a href="https://whatsdemand.com/blog/kitchen-drain-clog/" target="_blank" rel="noopener">Kitchen Drain Clog</a>
+        <a href="https://whatsdemand.com/blog/home-plumbing-maintenance-tips/" target="_blank" rel="noopener">Home Plumbing Maintenance Tips</a>
+      </div>
+    </details>
+  </div>
+ 
+  <div class="client-card">
+    <div class="client-head">
+      <a class="client-title" href="https://londonappdevelopment.co.uk/" target="_blank" rel="noopener">London App Development</a>
+      <span class="client-tag">UK · App development</span>
+    </div>
+    <p class="client-context">London App Development needed homepage copy that clearly positioned its services for a UK audience.</p>
+    <div class="client-row"><b>Solution</b><span>Wrote the homepage copy.</span></div>
+  </div>
+ 
+  <div class="client-card">
+    <div class="client-head">
+      <a class="client-title" href="https://rubberxperts.com/" target="_blank" rel="noopener">RubberXperts</a>
+      <span class="client-tag">Industrial · O-ring materials</span>
+    </div>
+    <p class="client-context">RubberXperts needed technically accurate product pages so engineers and buyers could match the right O-ring material to their application.</p>
+    <div class="client-row"><b>Solution</b><span>Wrote product pages across the O-ring catalog: silicone, EPDM, neoprene, fluorosilicone, HNBR, Buna-N, and polyurethane, covering material properties and use cases.</span></div>
+    <div class="client-row"><b>Result</b><span>Every O-ring material in the catalog now has an optimized product page, giving engineers and buyers a reference when comparing materials and finding the right option for their business.  .</span></div>
+    <details>
+      <summary>Published pages (7)</summary>
+      <div class="link-list">
+        <a href="https://rubberxperts.com/products/o-rings/silicone/" target="_blank" rel="noopener">Silicone O-Rings</a>
+        <a href="https://rubberxperts.com/products/o-rings/epdm/" target="_blank" rel="noopener">EPDM O-Rings</a>
+        <a href="https://rubberxperts.com/products/o-rings/neoprene/" target="_blank" rel="noopener">Neoprene O-Rings</a>
+        <a href="https://rubberxperts.com/products/o-rings/fluorosilicone/" target="_blank" rel="noopener">Fluorosilicone O-Rings</a>
+        <a href="https://rubberxperts.com/products/o-rings/hnbr/" target="_blank" rel="noopener">HNBR O-Rings</a>
+        <a href="https://rubberxperts.com/products/o-rings/buna-nbr/" target="_blank" rel="noopener">Buna-N (NBR) O-Rings</a>
+        <a href="https://rubberxperts.com/products/o-rings/polyurethane/" target="_blank" rel="noopener">Polyurethane O-Rings</a>
+      </div>
+    </details>
+  </div>
+ 
+  <div class="client-card">
+    <div class="client-head">
+      <a class="client-title" href="https://www.thecabinchiangmai.com/" target="_blank" rel="noopener">The Cabin Chiang Mai</a>
+      <span class="client-tag">Thailand · Addiction treatment</span>
+    </div>
+    <p class="client-context">The Cabin needed resource pages explaining specific types of addiction for people researching treatment options.</p>
+    <div class="client-row"><b>Solution</b><span>Wrote pages on shopping addiction, amphetamine addiction, and nicotine addiction.</span></div>
+    <details>
+      <summary>Published pages (3)</summary>
+      <div class="link-list">
+        <a href="https://www.thecabinchiangmai.com/addiction-type/shopping/" target="_blank" rel="noopener">Shopping Addiction</a>
+        <a href="https://www.thecabinchiangmai.com/addiction-type/amphetamines/" target="_blank" rel="noopener">Amphetamine Addiction</a>
+        <a href="https://www.thecabinchiangmai.com/addiction-type/nicotine/" target="_blank" rel="noopener">Nicotine Addiction</a>
+      </div>
+    </details>
+  </div>
+ 
+  <div class="client-card">
+    <div class="client-head">
+      <a class="client-title" href="https://www.uaedriving.com/" target="_blank" rel="noopener">UAE Driving</a>
+      <span class="client-tag">UAE · Car rental</span>
+    </div>
+    <p class="client-context">UAE Driving needed location and vehicle pages to capture search intent from renters across Dubai.</p>
+    <div class="client-row"><b>Solution</b><span>Wrote location pages for Circle Mall JVC, Al Rigga, and Al Nahda, vehicle pages for the Mitsubishi Attrage, Hyundai Creta, and Toyota Land Cruiser, and a monthly rental page for the Kia K5.</span></div>
+    <div class="client-row"><b>Result</b><span>Expanded UAE Driving's location and vehicle content coverage in Dubai search terms and supported off-page SEO through a guest article placement on Mid-Day, securing a backlink to the website.</span></div>
+    <details>
+      <summary>Published pages (8)</summary>
+      <div class="link-list">
+        <a href="https://www.uaedriving.com/car-rental-dubai/location/circle-mall-jvc" target="_blank" rel="noopener">Circle Mall JVC</a>
+        <a href="https://www.uaedriving.com/car-rental-dubai/location/al-rigga" target="_blank" rel="noopener">Al Rigga</a>
+        <a href="https://www.uaedriving.com/car-rental-dubai/location/al-nahda" target="_blank" rel="noopener">Al Nahda</a>
+        <a href="https://www.uaedriving.com/car-rental-dubai/mitsubishi/attrage" target="_blank" rel="noopener">Mitsubishi Attrage</a>
+        <a href="https://www.uaedriving.com/car-rental-dubai/hyundai/creta" target="_blank" rel="noopener">Hyundai Creta</a>
+        <a href="https://www.uaedriving.com/car-rental-dubai/toyota/landcruiser" target="_blank" rel="noopener">Toyota Land Cruiser</a>
+        <a href="https://www.uaedriving.com/monthly-car-rental/kia-k5/" target="_blank" rel="noopener">Kia K5 (Monthly Rental)</a>
+        <a href="https://www.mid-day.com/buzz/article/monthly-car-rental-dubai-long-term-car-rental-5796" target="_blank" rel="noopener">Mid-Day: Monthly Car Rental Dubai</a>
+      </div>
+    </details>
+  </div>
+ 
+  <div class="client-card">
+    <div class="client-head">
+      <a class="client-title" href="https://cbdamericanshaman.com/" target="_blank" rel="noopener">CBD American Shaman</a>
+      <span class="client-tag">US · CBD & hemp products</span>
+    </div>
+    <p class="client-context">CBD American Shaman needed product pages across a large catalog, each matching how customers search for that product.</p>
+    <div class="client-row"><b>Solution</b><span>Wrote product pages for CBD gummies, CBD oil, and a range of THCA flower strains.</span></div>
+    <details>
+      <summary>Published pages (10)</summary>
+      <div class="link-list">
+        <a href="https://cbdamericanshaman.com/cbd/gummies" target="_blank" rel="noopener">CBD Gummies</a>
+        <a href="https://cbdamericanshaman.com/cbd/gummies-10mg" target="_blank" rel="noopener">CBD Gummies 10mg</a>
+        <a href="https://cbdamericanshaman.com/buy/cbd-oil" target="_blank" rel="noopener">CBD Oil</a>
+        <a href="https://cbdamericanshaman.com/7-oh-chewable-tablets-white-vein-advanced-alkaloids" target="_blank" rel="noopener">7-OH Chewable Tablets</a>
+        <a href="https://cbdamericanshaman.com/thca-flower/kush/super-glue" target="_blank" rel="noopener">THCA Flower: Super Glue</a>
+        <a href="https://cbdamericanshaman.com/thca-flower/gelato/41" target="_blank" rel="noopener">THCA Flower: Gelato #41</a>
+        <a href="https://cbdamericanshaman.com/thca-flower/gelato/italian-ice" target="_blank" rel="noopener">THCA Flower: Italian Ice</a>
+        <a href="https://cbdamericanshaman.com/thca-flower/cookie/super-boof" target="_blank" rel="noopener">THCA Flower: Super Boof</a>
+        <a href="https://cbdamericanshaman.com/thca-flower/cookie/carbon-fiber-pre-roll" target="_blank" rel="noopener">THCA Flower: Carbon Fiber Pre-Roll</a>
+        <a href="https://cbdamericanshaman.com/thca-flower/runtz/canal-st-pre-roll" target="_blank" rel="noopener">THCA Flower: Canal St Pre-Roll</a>
+      </div>
+    </details>
+  </div>
+ 
+  <div class="client-card">
+    <div class="client-head">
+      <a class="client-title" href="https://outdoorwarranty.com/" target="_blank" rel="noopener">Outdoor Warranty</a>
+      <span class="client-tag">US · RV ownership & warranty</span>
+    </div>
+    <p class="client-context">Outdoor Warranty needed educational RV content for owners at every stage, from first-time buyers to full-timers.</p>
+    <div class="client-row"><b>Solution</b><span>Wrote guides on RV maintenance, buying and renting, winterizing, tires, water systems, connectivity, tax questions, and RV living regulations.</span></div>
+    <div class="client-row"><b>Result</b><span>Published 19 blog articles covering practical RV topics, giving Outdoor Warranty a broader content base for owners researching maintenance, purchases, rentals, and everyday RV use.</span></div>
+    <details>
+      <summary>Published pages (19)</summary>
+      <div class="link-list">
+        <a href="https://outdoorwarranty.com/rv-roadside-assistance/" target="_blank" rel="noopener">RV Roadside Assistance</a>
+        <a href="https://outdoorwarranty.com/how-much-does-an-rv-weigh-why-does-it-matter/" target="_blank" rel="noopener">How Much Does an RV Weigh</a>
+        <a href="https://outdoorwarranty.com/5-steps-on-how-to-unclog-rv-toilet/" target="_blank" rel="noopener">How to Unclog an RV Toilet</a>
+        <a href="https://outdoorwarranty.com/rv-water-heater-not-working-causes-and-fixes/" target="_blank" rel="noopener">RV Water Heater Not Working</a>
+        <a href="https://outdoorwarranty.com/rv-ownership-statistics-pros-and-cons-of-owning-an-rv/" target="_blank" rel="noopener">RV Ownership Statistics</a>
+        <a href="https://outdoorwarranty.com/10-must-have-rv-upgrades-you-should-consider/" target="_blank" rel="noopener">Must-Have RV Upgrades</a>
+        <a href="https://outdoorwarranty.com/standard-recreational-vehicle-certification-laws-and-regulations/" target="_blank" rel="noopener">RV Certification Laws & Regulations</a>
+        <a href="https://outdoorwarranty.com/camper-trailers-types-of-camping-trailers/" target="_blank" rel="noopener">Types of Camping Trailers</a>
+        <a href="https://outdoorwarranty.com/rv-maintenance/" target="_blank" rel="noopener">RV Maintenance</a>
+        <a href="https://outdoorwarranty.com/buyers-guide-on-how-to-buy-an-rv/" target="_blank" rel="noopener">Buyer's Guide: How to Buy an RV</a>
+        <a href="https://outdoorwarranty.com/winterize-rv-how-to-winterize-a-camper/" target="_blank" rel="noopener">How to Winterize a Camper</a>
+        <a href="https://outdoorwarranty.com/best-rv-tires-best-tires-for-motorhomes-campers-and-trailers/" target="_blank" rel="noopener">Best RV Tires</a>
+        <a href="https://outdoorwarranty.com/why-is-living-in-an-rv-illegal/" target="_blank" rel="noopener">Why Is Living in an RV Illegal</a>
+        <a href="https://outdoorwarranty.com/how-to-sanitize-rv-fresh-water-tank/" target="_blank" rel="noopener">How to Sanitize an RV Fresh Water Tank</a>
+        <a href="https://outdoorwarranty.com/how-much-to-rent-an-rv-for-a-week/" target="_blank" rel="noopener">How Much to Rent an RV for a Week</a>
+        <a href="https://outdoorwarranty.com/how-to-avoid-sales-tax-on-rv-purchase/" target="_blank" rel="noopener">How to Avoid Sales Tax on an RV Purchase</a>
+        <a href="https://outdoorwarranty.com/how-to-get-internet-wifi-in-an-rv/" target="_blank" rel="noopener">How to Get Internet/WiFi in an RV</a>
+        <a href="https://outdoorwarranty.com/when-is-the-best-time-to-buy-an-rv/" target="_blank" rel="noopener">Best Time to Buy an RV</a>
+        <a href="https://outdoorwarranty.com/can-i-write-off-an-rv-as-a-business-expense/" target="_blank" rel="noopener">Can I Write Off an RV as a Business Expense</a>
+        <a href="https://outdoorwarranty.com/rv-ac-not-turning-on-rv-ac-repair-and-troubleshooting/" target="_blank" rel="noopener">RV AC Not Turning On</a>
+      </div>
+    </details>
+  </div>
+ 
+  <div class="client-card">
+    <div class="client-head">
+      <a class="client-title" href="https://totebagfactory.com/" target="_blank" rel="noopener">Totebag Factory</a>
+      <span class="client-tag">E-commerce · Custom tote bags</span>
+    </div>
+    <p class="client-context">Totebag Factory needed collection pages for bulk buyers shopping by event or use case.</p>
+    <div class="client-row"><b>Solution</b><span>Wrote collection pages for edge-to-edge printed totes, Thanksgiving bags, bulk initial totes, kids' coloring totes, and lunch bag multipacks.</span></div>
+    <details>
+      <summary>Published pages (5)</summary>
+      <div class="link-list">
+        <a href="https://totebagfactory.com/collections/all-over-edge-to-edge-tote-bag-printing" target="_blank" rel="noopener">All-Over Edge-to-Edge Tote Bag Printing</a>
+        <a href="https://totebagfactory.com/collections/thanksgiving-bags" target="_blank" rel="noopener">Thanksgiving Bags</a>
+        <a href="https://totebagfactory.com/collections/initial-tote-bags-bulk" target="_blank" rel="noopener">Initial Tote Bags (Bulk)</a>
+        <a href="https://totebagfactory.com/collections/coloring-painting-tote-bags-kids" target="_blank" rel="noopener">Coloring & Painting Tote Bags for Kids</a>
+        <a href="https://totebagfactory.com/collections/cheap-lunch-bags-large-24-pack" target="_blank" rel="noopener">Lunch Bags, Large 24-Pack</a>
+      </div>
+    </details>
+  </div>
+ 
+  <div class="client-card">
+    <div class="client-head">
+      <a class="client-title" href="https://fictionlit.com/" target="_blank" rel="noopener">FictionLit</a>
+      <span class="client-tag">Creative writing platform</span>
+    </div>
+    <p class="client-context">FictionLit needed original fan fiction across popular fandoms for its story library.</p>
+    <div class="client-row"><b>Solution</b><span>Wrote a Star Wars/Harry Potter crossover, a Steve Harrington story, and a Nexo Knights piece.</span></div>
+    <details>
+      <summary>Published pages (3)</summary>
+      <div class="link-list">
+        <a href="https://fictionlit.com/star-wars-harry-potter-crossover-fanfiction/" target="_blank" rel="noopener">Star Wars / Harry Potter Crossover</a>
+        <a href="https://fictionlit.com/steve-harrington-fanfiction/" target="_blank" rel="noopener">Steve Harrington Fanfiction</a>
+        <a href="https://fictionlit.com/nexo-knights-fanfiction/" target="_blank" rel="noopener">Nexo Knights Fanfiction</a>
+      </div>
+    </details>
+  </div>
+ 
+  <div class="client-card">
+    <div class="client-head">
+      <a class="client-title" href="https://www.eraorganics.com/" target="_blank" rel="noopener">Eraorganics</a>
+      <span class="client-tag">Skincare & beauty e-commerce</span>
+    </div>
+    <p class="client-context">Eraorganics needed guides connecting its hypochlorous acid line to specific skin conditions customers search for.</p>
+    <div class="client-row"><b>Solution</b><span>Wrote guides on hypochlorous acid for psoriasis, eczema, acne, rosacea, and use with tretinoin, plus standalone explainers on dermatitis and rosacea subtypes.</span></div>
+    <div class="client-row"><b>Result</b><span>Published 15 articles on the Beauty Guide blog, expanding its coverage of high-intent skincare topics and giving readers more targeted information around common skin concerns and product use.</span></div>
+    <details>
+      <summary>Published pages (15)</summary>
+      <div class="link-list">
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/hypochlorous-acid-for-psoriasis" target="_blank" rel="noopener">Hypochlorous Acid for Psoriasis</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/hypochlorous-acid-for-eczema" target="_blank" rel="noopener">Hypochlorous Acid for Eczema</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/hypochlorous-acid-for-acne" target="_blank" rel="noopener">Hypochlorous Acid for Acne</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/hypochlorous-acid-with-tretinoin" target="_blank" rel="noopener">Hypochlorous Acid with Tretinoin</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/hypochlorous-acid-for-rosacea" target="_blank" rel="noopener">Hypochlorous Acid for Rosacea</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/skin-condition-stasis-dermatitis" target="_blank" rel="noopener">Skin Condition: Stasis Dermatitis</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/skin-condition-seborrheic-dermatitis" target="_blank" rel="noopener">Skin Condition: Seborrheic Dermatitis</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/skin-condition-nummular-eczema" target="_blank" rel="noopener">Skin Condition: Nummular Eczema</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/skin-condition-neurodermatitis" target="_blank" rel="noopener">Skin Condition: Neurodermatitis</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/skin-condition-contact-dermatitis" target="_blank" rel="noopener">Skin Condition: Contact Dermatitis</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/skin-condition-atopic-dermatitis" target="_blank" rel="noopener">Skin Condition: Atopic Dermatitis</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/skin-condition-phymatous-rosacea" target="_blank" rel="noopener">Skin Condition: Phymatous Rosacea</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/skin-condition-papulopustular-rosacea" target="_blank" rel="noopener">Skin Condition: Papulopustular Rosacea</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/skin-condition-ocular-rosacea" target="_blank" rel="noopener">Skin Condition: Ocular Rosacea</a>
+        <a href="https://www.eraorganics.com/blogs/beauty-guide/skin-condition-erythematotelangiectatic-rosacea" target="_blank" rel="noopener">Skin Condition: Erythematotelangiectatic Rosacea</a>
+      </div>
+    </details>
+  </div>
+ 
+  <div class="closing">
+    <p>Also write technical documentation and internal how-to guides. Samples available on request, since most live in private client docs.</p>
+  </div>
+ 
+  <footer>
+    <span>Sachi Lei Paredes</span>
+    <div class="footer-links">
+      <a href="https://wa.me/639194341120" target="_blank" rel="noopener">WhatsApp: +63 919 434 1120</a>
+      <a href="https://www.linkedin.com/in/sachilei" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </footer>
+ 
+</div>
+ 
+</body>
+</html>
+ 
