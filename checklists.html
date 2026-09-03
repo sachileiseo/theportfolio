@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My SEO Content Checklist — Sachi Lei Paredes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B0C0E;
+    --ink-soft:#17181B;
+    --paper:#F2F2F0;
+    --paper-dim:#9A9A96;
+    --accent:#7A5CFA;
+    --red:#C4432E;
+    --gold:#D1A954;
+    --line:rgba(242,242,240,0.12);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--ink);color:var(--paper);font-family:'Inter',sans-serif;}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 28px;}
+  a{color:inherit;}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0;flex-wrap:wrap;gap:14px;}
+  .logo{font-family:'Poppins',sans-serif;font-weight:700;font-size:19px;letter-spacing:-0.01em;}
+  .logo span{color:var(--accent);}
+  .nav-links{display:flex;gap:20px;align-items:center;}
+  .back-link{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--paper-dim);text-decoration:none;}
+  .btn{font-family:'Poppins',sans-serif;font-weight:600;font-size:13px;color:var(--ink);text-decoration:none;background:var(--paper);border-radius:4px;padding:10px 18px;display:inline-block;border:none;cursor:pointer;}
+  .hero{padding:48px 0 56px;}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:22px;}
+  h1{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(30px,4.6vw,46px);line-height:1.1;margin:0 0 20px;max-width:760px;letter-spacing:-0.02em;}
+  .hero p{font-size:16px;line-height:1.7;color:var(--paper-dim);max-width:600px;margin:0 0 28px;}
+ 
+  .progress-wrap{display:flex;align-items:center;gap:16px;margin-bottom:44px;}
+  .progress-track{flex:1;height:6px;border-radius:3px;background:var(--ink-soft);overflow:hidden;border:1px solid var(--line);}
+  .progress-fill{height:100%;width:0%;background:var(--accent);transition:width 0.4s ease;}
+  .progress-label{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--paper-dim);white-space:nowrap;}
+ 
+  section{padding:0 0 80px;}
+  .label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--paper-dim);margin-bottom:10px;}
+  h2{font-family:'Poppins',sans-serif;font-weight:700;font-size:26px;margin:0 0 8px;max-width:640px;}
+  .section-sub{font-size:14.5px;color:var(--paper-dim);margin:0 0 32px;max-width:600px;line-height:1.65;}
+ 
+  .cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);}
+  .cat-card{background:var(--ink);padding:26px 24px;}
+  .cat-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px;}
+  .cat-title{font-family:'Poppins',sans-serif;font-weight:600;font-size:15.5px;margin:0;}
+  .cat-count{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gold);}
+  .check-item{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px;cursor:pointer;}
+  .check-item input{margin-top:3px;accent-color:var(--accent);cursor:pointer;flex-shrink:0;}
+  .check-item span{font-size:13.5px;line-height:1.55;color:var(--paper-dim);transition:color 0.2s ease;}
+  .check-item input:checked ~ span{color:var(--paper-dim);text-decoration:line-through;text-decoration-color:var(--red);opacity:0.6;}
+ 
+  .deepdive{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;}
+  .dd-card{background:var(--ink-soft);border:1px solid var(--line);border-radius:6px;padding:26px 28px;}
+  .dd-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--accent);margin-bottom:10px;display:block;}
+  .dd-title{font-family:'Poppins',sans-serif;font-weight:600;font-size:16px;margin:0 0 10px;}
+  .dd-body{font-size:13.5px;line-height:1.7;color:var(--paper-dim);margin:0;}
+ 
+  .anchor-demo{background:var(--ink-soft);border:1px solid var(--line);border-radius:6px;padding:28px 30px;}
+  .anchor-demo p{font-family:'IBM Plex Mono',monospace;font-size:15px;line-height:1.9;color:var(--paper-dim);margin:0;}
+  .anchor-demo b{color:var(--paper);font-weight:500;border-bottom:1.5px solid var(--accent);}
+  .anchor-tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:20px;}
+ 
+  .closing{padding:40px 0 90px;border-top:1px solid var(--line);}
+  .closing h2{font-size:22px;max-width:640px;}
+  .closing p{font-size:15px;line-height:1.75;color:var(--paper-dim);max-width:620px;margin:0 0 24px;}
+ 
+  footer{border-top:1px solid var(--line);padding:24px 0 40px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--paper-dim);flex-wrap:wrap;gap:8px;}
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity 0.7s ease, transform 0.7s ease;}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
+ 
+<div class="wrap">
+ 
+  <nav>
+    <span class="logo">SACHI LEI <span>PAREDES</span></span>
+    <div class="nav-links">
+      <a class="back-link" href="lei-seo-writer-site.html">← back to home</a>
+      <a class="back-link" href="client-work.html">Client Work</a>
+      <a class="back-link" href="contact.html">Contact</a>
+    </div>
+  </nav>
+ 
+  <section class="hero">
+    <p class="eyebrow">SEO content writer · Checklists 2026</p>
+    <h1>My SEO Content Checklist 2026</h1>
+    <p>This is the actual checklist I run every draft through, from the moment a content brief lands in my inbox to the moment a page is ready to publish. Six stages, all pulled from how I actually work, not a generic template.</p>
+    <div class="progress-wrap">
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <span class="progress-label" id="progressLabel">0 / 0 checked</span>
+    </div>
+  </section>
+ 
+  <section class="reveal">
+    <p class="label">Stage 1</p>
+    <h2>Content brief checklist</h2>
+    <p class="section-sub">The first thing I check before I write a single word, if a brief is missing any of these, I go back to the client before starting.</p>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">Brief basics</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>Target keyword and search intent confirmed</span></label>
+        <label class="check-item"><input type="checkbox"><span>Word count / length target specified</span></label>
+        <label class="check-item"><input type="checkbox"><span>Deadline and number of revision rounds confirmed</span></label>
+        <label class="check-item"><input type="checkbox"><span>CMS or delivery format specified (WordPress, Docs, plain text)</span></label>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">Structure &amp; linking</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>H1-H4 outline provided or approved before drafting</span></label>
+        <label class="check-item"><input type="checkbox"><span>Internal link targets and anchor text specified</span></label>
+        <label class="check-item"><input type="checkbox"><span>Competitor or reference URLs included</span></label>
+        <label class="check-item"><input type="checkbox"><span>Existing site pages checked for cannibalization risk</span></label>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">Voice &amp; brand rules</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>Tone and voice guide confirmed (UK/US, formal/conversational)</span></label>
+        <label class="check-item"><input type="checkbox"><span>Banned word list attached or confirmed</span></label>
+        <label class="check-item"><input type="checkbox"><span>Brand terms, greenlist and blacklist words noted</span></label>
+        <label class="check-item"><input type="checkbox"><span>Image and alt text requirements specified</span></label>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="reveal">
+    <p class="label">Stage 2</p>
+    <h2>Keyword &amp; search intent checklist</h2>
+    <p class="section-sub">Before drafting, I confirm the page is actually built around what people are searching for — not just a keyword pasted into a brief.</p>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">Research</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>Primary keyword and search volume noted</span></label>
+        <label class="check-item"><input type="checkbox"><span>Secondary and semantically related keywords listed</span></label>
+        <label class="check-item"><input type="checkbox"><span>Search intent identified, informational, transactional, or navigational</span></label>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">Competitive check</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>Top 3 ranking pages reviewed for gaps</span></label>
+        <label class="check-item"><input type="checkbox"><span>"People also ask" questions gathered</span></label>
+        <label class="check-item"><input type="checkbox"><span>Topical authority gap identified against competitors</span></label>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="reveal">
+    <p class="label">Stage 3</p>
+    <h2>On-page content checklist</h2>
+    <p class="section-sub">Applied while the page is being written, not bolted on after.</p>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">Keyword placement</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>Primary keyword appears in the H1</span></label>
+        <label class="check-item"><input type="checkbox"><span>Primary keyword appears within the first 100 words</span></label>
+        <label class="check-item"><input type="checkbox"><span>Supporting keywords worked naturally into H2s and H3s</span></label>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">Meta &amp; links</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>Unique meta title, within length limit</span></label>
+        <label class="check-item"><input type="checkbox"><span>Meta description written to earn the click, includes keyword</span></label>
+        <label class="check-item"><input type="checkbox"><span>Internal links placed with descriptive anchor text, not "click here"</span></label>
+        <label class="check-item"><input type="checkbox"><span>Alt text written for every image</span></label>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="reveal">
+    <p class="label">Stage 4 · the part I'm strictest about</p>
+    <h2>Style &amp; editing pass</h2>
+    <p class="section-sub">Every draft goes through this before it's called done. This is the checklist behind the "edit pass" demo on my homepage.</p>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">Language pass</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>Banned-word sweep, may, often, during, also, both, this</span></label>
+        <label class="check-item"><input type="checkbox"><span>Average sentence length checked, targeting 25–30 words</span></label>
+        <label class="check-item"><input type="checkbox"><span>Sentence openers varied across paragraphs</span></label>
+        <label class="check-item"><input type="checkbox"><span>Active voice used as the default</span></label>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">Formatting rules</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>Anchor text bolded, hyperlinked, and placed mid-sentence in the final sentence of the paragraph</span></label>
+        <label class="check-item"><input type="checkbox"><span>Lists follow "headword: explanation" or "headword. explanation" format</span></label>
+        <label class="check-item"><input type="checkbox"><span>One H1 per page, no skipped heading levels</span></label>
+        <label class="check-item"><input type="checkbox"><span>Paragraphs broken up, no walls of text</span></label>
+      </div>
+    </div>
+ 
+    <div style="height:24px;"></div>
+ 
+    <div class="anchor-demo">
+      <span class="anchor-tag">anchor text placement / how it actually reads</span>
+      <p>Emergency repairs stay available year-round, so if a pipe bursts overnight, most homeowners just book <b>24-hour emergency plumbing</b>.</p>
+    </div>
+  </section>
+ 
+  <section class="reveal">
+    <p class="label">Stage 5</p>
+    <h2>AI &amp; search visibility checklist</h2>
+    <p class="section-sub">Written for how content gets read now, by search crawlers, AI answer engines, and actual people, in that order of who sees it first.</p>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">AI-answer readiness</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>Direct answer given near the top of the page (BLUF style)</span></label>
+        <label class="check-item"><input type="checkbox"><span>Clear, extractable facts and stats an AI engine can cite</span></label>
+        <label class="check-item"><input type="checkbox"><span>FAQ section answering real long-tail questions</span></label>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">Freshness</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>Stats and examples current, not from an old draft</span></label>
+        <label class="check-item"><input type="checkbox"><span>Headings match how people actually phrase voice and chat queries</span></label>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="reveal">
+    <p class="label">Stage 6</p>
+    <h2>Final QA before delivery</h2>
+    <p class="section-sub">The last pass before a doc gets sent back to the client.</p>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">Quality check</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>Originality checked, no close paraphrasing of source material</span></label>
+        <label class="check-item"><input type="checkbox"><span>Grammar and spelling pass complete</span></label>
+        <label class="check-item"><input type="checkbox"><span>Any stats or claims fact-checked against a real source</span></label>
+      </div>
+      <div class="cat-card">
+        <div class="cat-head"><h3 class="cat-title">Delivery check</h3><span class="cat-count" data-count></span></div>
+        <label class="check-item"><input type="checkbox"><span>Final read-through against the original brief</span></label>
+        <label class="check-item"><input type="checkbox"><span>Formatting matches the client's CMS or doc requirements</span></label>
+        <label class="check-item"><input type="checkbox"><span>Client-specific style guide re-checked one last time</span></label>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="reveal">
+    <p class="label">Deep dive</p>
+    <h2>Why the content brief check matters most</h2>
+    <p class="section-sub">Most delays and revisions come from a brief that skipped one of these. Catching it before writing starts saves both sides a rewrite.</p>
+    <div class="deepdive">
+      <div class="dd-card">
+        <span class="dd-num">01</span>
+        <h4 class="dd-title">No outline, no draft</h4>
+        <p class="dd-body">A brief without an H1–H4 structure means the writer is guessing at what the client actually wants covered. I ask for the outline first, or build one and get it approved before writing a word.</p>
+      </div>
+      <div class="dd-card">
+        <span class="dd-num">02</span>
+        <h4 class="dd-title">Cannibalization check first</h4>
+        <p class="dd-body">Before a new page gets written, I check it against the client's existing pages. Two pages competing for the same keyword hurts both — better to catch it at the brief stage than after publishing.</p>
+      </div>
+      <div class="dd-card">
+        <span class="dd-num">03</span>
+        <h4 class="dd-title">Voice rules travel with the brief</h4>
+        <p class="dd-body">UK English and first-person plural for one client, action-first CTAs for another — the voice guide isn't optional context, it's part of the brief itself.</p>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="closing reveal">
+    <h2>Want a checklist built around your content?</h2>
+    <p>This is the exact process behind every page I deliver. Happy to run it against your existing content and show you where it's falling short.</p>
+    <a class="btn" href="contact.html">Get in touch →</a>
+  </section>
+ 
+  <footer>
+    <span>Sachi Lei Paredes</span>
+    <span>SEO content writer</span>
+  </footer>
+ 
+</div>
+ 
+<script>
+  function updateProgress(){
+    var all = document.querySelectorAll('.check-item input[type="checkbox"]');
+    var checked = 0;
+    all.forEach(function(cb){ if(cb.checked) checked++; });
+    var pct = all.length ? Math.round((checked/all.length)*100) : 0;
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressLabel').textContent = checked + ' / ' + all.length + ' checked';
+ 
+    document.querySelectorAll('.cat-card').forEach(function(card){
+      var boxes = card.querySelectorAll('input[type="checkbox"]');
+      var c = 0;
+      boxes.forEach(function(b){ if(b.checked) c++; });
+      var countEl = card.querySelector('[data-count]');
+      if(countEl) countEl.textContent = c + '/' + boxes.length;
+    });
+  }
+ 
+  document.querySelectorAll('.check-item input[type="checkbox"]').forEach(function(cb){
+    cb.addEventListener('change', updateProgress);
+  });
+  updateProgress();
+ 
+  var reveals = document.querySelectorAll('.reveal');
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(function(el){ obs.observe(el); });
+</script>
+ 
+</body>
+</html>
+ 
