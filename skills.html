@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills | Sachi Lei Paredes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B0C0E;
+    --ink-soft:#17181B;
+    --paper:#F2F2F0;
+    --paper-dim:#9A9A96;
+    --accent:#7A5CFA;
+    --gold:#D1A954;
+    --red:#C4432E;
+    --line:rgba(242,242,240,0.12);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--ink);color:var(--paper);font-family:'Inter',sans-serif;}
+  .wrap{max-width:980px;margin:0 auto;padding:0 28px;}
+  a{color:inherit;}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0;flex-wrap:wrap;gap:14px;}
+  .logo{font-family:'Poppins',sans-serif;font-weight:700;font-size:19px;letter-spacing:-0.01em;text-decoration:none;color:var(--paper);}
+  .logo span{color:var(--accent);}
+  .nav-links{display:flex;gap:20px;align-items:center;}
+  .nav-link{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--paper-dim);text-decoration:none;}
+  .nav-link:hover{color:var(--paper);}
+  .nav-link.current{color:var(--paper);border-bottom:1px solid var(--accent);}
+  .btn{
+    font-family:'Poppins',sans-serif;font-weight:600;font-size:13px;
+    color:var(--ink);text-decoration:none;background:var(--paper);
+    border-radius:4px;padding:10px 18px;display:inline-block;border:none;cursor:pointer;
+  }
+ 
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin:36px 0 20px;}
+  h1{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(30px,4.6vw,46px);line-height:1.1;margin:0 0 20px;letter-spacing:-0.02em;max-width:680px;}
+  .lead{font-size:16px;line-height:1.7;color:var(--paper-dim);max-width:600px;margin:0 0 28px;}
+ 
+  section{padding:0 0 76px;}
+  .label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--paper-dim);margin-bottom:10px;}
+  h2{font-family:'Poppins',sans-serif;font-weight:700;font-size:25px;margin:0 0 8px;max-width:620px;}
+  .section-sub{font-size:14px;color:var(--paper-dim);margin:0 0 32px;max-width:620px;line-height:1.6;}
+ 
+  .why-list{display:grid;gap:26px;max-width:700px;}
+  .why-item{display:flex;gap:16px;}
+  .why-mark{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--accent);padding-top:3px;flex-shrink:0;}
+  .why-title{font-family:'Poppins',sans-serif;font-weight:600;font-size:15.5px;margin:0 0 6px;}
+  .why-body{font-size:13.5px;line-height:1.7;color:var(--paper-dim);margin:0;}
+ 
+  .skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:16px;}
+  .skill-col{background:var(--ink);padding:26px 24px;}
+  .skill-col-title{font-family:'Poppins',sans-serif;font-weight:600;font-size:14px;margin:0 0 16px;color:var(--gold);}
+  .skill-check{display:flex;gap:8px;align-items:flex-start;margin-bottom:10px;font-size:13px;line-height:1.5;color:var(--paper-dim);}
+  .skill-check b{color:var(--accent);flex-shrink:0;}
+ 
+  .tool-block{margin-bottom:28px;}
+  .tool-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--paper-dim);margin-bottom:10px;}
+  .tool-strip{display:flex;flex-wrap:wrap;gap:10px;}
+  .tool-pill{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--paper);
+    background:var(--ink-soft);border:1px solid var(--line);border-radius:20px;padding:8px 15px;
+  }
+ 
+  .cert-list{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);}
+  .cert-row{background:var(--ink);padding:18px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
+  .cert-name{font-family:'Poppins',sans-serif;font-weight:600;font-size:14px;}
+  .cert-org{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gold);}
+ 
+  .issue-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);}
+  .issue-col{background:var(--ink);padding:24px 22px;}
+  .issue-row{display:flex;gap:8px;align-items:flex-start;margin-bottom:10px;font-size:13px;line-height:1.5;color:var(--paper-dim);}
+  .issue-row b{color:var(--red);flex-shrink:0;}
+ 
+  .closing{border-top:1px solid var(--line);padding:44px 0 90px;}
+  .closing h2{font-size:24px;max-width:600px;}
+  .closing p{font-size:15px;line-height:1.7;color:var(--paper-dim);max-width:580px;margin:0 0 22px;}
+ 
+  footer{
+    border-top:1px solid var(--line);padding:24px 0 40px;display:flex;justify-content:space-between;
+    font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--paper-dim);flex-wrap:wrap;gap:14px;align-items:center;
+  }
+  .footer-links{display:flex;gap:18px;flex-wrap:wrap;}
+  .footer-links a{color:var(--paper-dim);text-decoration:none;}
+  .footer-links a:hover{color:var(--paper);}
+</style>
+</head>
+<body>
+ 
+<div class="wrap">
+ 
+  <nav>
+    <a href="index.html" class="logo">SACHI LEI <span>PAREDES</span></a>
+    <div class="nav-links">
+      <a class="back-link" href="https://sachileiseo.github.io/theportfolio/">← back to home</a>
+      <a href="https://sachileiseo.github.io/theportfolio/seo-content-checklist-2026.html">Checklists 2026</a>
+      <a class="back-link" href="client-work.html">Client Work</a>
+      <a href="skills.html" class="nav-link current">Skills</a>
+      <a class="back-link" href="contact.html">Contact</a>
+    </div>
+  </nav>
+ 
+  <p class="eyebrow">What I bring to a project</p>
+  <h1>Proven SEO content skills, built for how search actually works now</h1>
+  <p class="lead">Five years writing content that has to do two jobs at once: rank in search, and hold up once a real reader gets there. Here is what that work is built on.</p>
+  <a class="btn" href="contact.html">Hire me →</a>
+ 
+  <section style="padding-top:60px;">
+    <p class="label">Why work with me</p>
+    <h2>What you actually get</h2>
+    <div class="why-list">
+      <div class="why-item">
+        <span class="why-mark">01</span>
+        <div>
+          <h3 class="why-title">Content built to rank, not just fill a page</h3>
+          <p class="why-body">Every page starts with keyword research and search intent, not a topic picked at random. That means the content is aimed at the exact question a reader typed in.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <span class="why-mark">02</span>
+        <div>
+          <h3 class="why-title">Written for search engines and AI answers</h3>
+          <p class="why-body">Traditional on-page SEO still matters, but so does how content gets pulled into AI-generated answers. I structure pages so they can be cited by both.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <span class="why-mark">03</span>
+        <div>
+          <h3 class="why-title">A process you can actually see</h3>
+          <p class="why-body">A style guide, a banned-word list, a heading structure, all applied the same way on every draft. Nothing about the process is a black box.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section>
+    <p class="label">My skills</p>
+    <h2>Where the work happens</h2>
+    <p class="section-sub">SEO content writing sits at the intersection of research, structure, and the actual sentence-level craft of writing.</p>
+ 
+    <div class="skill-grid">
+      <div class="skill-col">
+        <p class="skill-col-title">SEO Fundamentals</p>
+        <div class="skill-check"><b>✓</b>Semantic SEO &amp; topical authority</div>
+        <div class="skill-check"><b>✓</b>Keyword research &amp; mapping</div>
+        <div class="skill-check"><b>✓</b>Search intent matching</div>
+        <div class="skill-check"><b>✓</b>On-page SEO (headings, meta tags, internal linking)</div>
+        <div class="skill-check"><b>✓</b>Technical SEO basics (site structure, crawlability)</div>
+        <div class="skill-check"><b>✓</b>Content cannibalization checks</div>
+      </div>
+      <div class="skill-col">
+        <p class="skill-col-title">Content Craft</p>
+        <div class="skill-check"><b>✓</b>Long-form articles &amp; guides</div>
+        <div class="skill-check"><b>✓</b>Service &amp; product page copy</div>
+        <div class="skill-check"><b>✓</b>Programmatic city &amp; location pages</div>
+        <div class="skill-check"><b>✓</b>Banned-word &amp; style-guide editing pass</div>
+        <div class="skill-check"><b>✓</b>Anchor text placement &amp; internal linking</div>
+        <div class="skill-check"><b>✓</b>Voice adaptation per client brand</div>
+      </div>
+      <div class="skill-col">
+        <p class="skill-col-title">Other Relevant Skills</p>
+        <div class="skill-check"><b>✓</b>WordPress content management</div>
+        <div class="skill-check"><b>✓</b>Data tracking &amp; performance analysis</div>
+        <div class="skill-check"><b>✓</b>Regulatory &amp; technical writing</div>
+        <div class="skill-check"><b>✓</b>Editing &amp; content management for teams</div>
+        <div class="skill-check"><b>✓</b>Client brief interpretation &amp; QA</div>
+      </div>
+    </div>
+  </section>
+ 
+  <section>
+    <p class="label">Tools I work in</p>
+    <h2>Day-to-day toolkit</h2>
+    <div class="tool-block">
+      <p class="tool-label">SEO &amp; Analytics</p>
+      <div class="tool-strip">
+        <span class="tool-pill">Google Search Console</span>
+        <span class="tool-pill">Google Analytics (GA4)</span>
+        <span class="tool-pill">Ahrefs</span>
+        <span class="tool-pill">SEMrush</span>
+      </div>
+    </div>
+    <div class="tool-block">
+      <p class="tool-label">CMS</p>
+      <div class="tool-strip">
+        <span class="tool-pill">WordPress</span>
+        <span class="tool-pill">Google Docs</span>
+      </div>
+    </div>
+  </section>
+ 
+  <section>
+    <p class="label">Verified</p>
+    <h2>Certifications</h2>
+    <p class="section-sub">Formal training behind the on-the-job experience.</p>
+    <div class="cert-list">
+      <div class="cert-row">
+        <span class="cert-name">SEO Certified I &amp; II</span>
+        <span class="cert-org">HubSpot Academy</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Inbound Marketing</span>
+        <span class="cert-org">HubSpot Academy</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Social Media Marketing</span>
+        <span class="cert-org">Great Learning</span>
+      </div>
+      <div class="cert-row">
+        <span class="cert-name">Technical SEO</span>
+        <span class="cert-org">SEMrush Academy</span>
+      </div>
+    </div>
+  </section>
+ 
+  <section>
+    <p class="label">Common problems</p>
+    <h2>Content issues that quietly hurt rankings</h2>
+    <p class="section-sub">Most of these show up in an audit before a single new page gets written.</p>
+    <div class="issue-grid">
+      <div class="issue-col">
+        <div class="issue-row"><b>✕</b>Thin or duplicate content across pages</div>
+        <div class="issue-row"><b>✕</b>Cannibalized pages targeting the same keyword</div>
+        <div class="issue-row"><b>✕</b>Missing or repeated meta titles</div>
+        <div class="issue-row"><b>✕</b>Weak internal linking between related pages</div>
+      </div>
+      <div class="issue-col">
+        <div class="issue-row"><b>✕</b>Heading structure that skips levels or repeats H1s</div>
+        <div class="issue-row"><b>✕</b>Inconsistent voice across a site's pages</div>
+        <div class="issue-row"><b>✕</b>Keyword stuffed into copy instead of written naturally</div>
+        <div class="issue-row"><b>✕</b>No content plan tied to search intent</div>
+      </div>
+      <div class="issue-col">
+        <div class="issue-row"><b>✕</b>Outdated stats or claims left unchecked</div>
+        <div class="issue-row"><b>✕</b>Content with no clear CTA</div>
+        <div class="issue-row"><b>✕</b>No structure for AI-generated answers to pull from</div>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="closing">
+    <h2>Need this skill set on your content?</h2>
+    <p>If your site needs pages that are researched, structured, and written to hold up, this is the exact skill set behind every page I deliver.</p>
+    <a class="btn" href="contact.html">Contact me</a>
+  </section>
+ 
+  <footer>
+    <span>Sachi Lei Paredes</span>
+    <div class="footer-links">
+      <a href="https://wa.me/639194341120" target="_blank" rel="noopener">WhatsApp: +63 919 434 1120</a>
+      <a href="https://www.linkedin.com/in/sachilei" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </footer>
+ 
+</div>
+ 
+</body>
+</html>
+ 
